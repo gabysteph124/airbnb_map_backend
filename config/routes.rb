@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   scope :api do
-    resources :placess, only: [:index]
+    resources :places, only: [:index]
   end
 end
