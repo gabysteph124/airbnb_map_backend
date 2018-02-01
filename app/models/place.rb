@@ -4,7 +4,7 @@ class Place < ApplicationRecord
   
   API_RESULTS_LIMIT = 100
   
-  def self.search(min_lat:, max_lat:, minlng:, maxlng:)
+  def self.search(min_lat:, max_lat:, min_lng:, max_lng:)
     by_latitude(min_lat, max_lat).by_longitude(min_lng, max_lng).limit(API_RESULTS_LIMIT)
   end
 end
